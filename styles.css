@@ -29,8 +29,25 @@ body {
     box-sizing: border-box;
 }
 
+
 .section span {
+    font-size: 1rem;
     font-weight: bold;
     color: rgba(248, 10, 10, 0.993);
+
+}
+
+
+.nonResizeableText {
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(248, 10, 10, 0.993);
+    margin: 10px;
+    box-sizing: border-box;
 
 }

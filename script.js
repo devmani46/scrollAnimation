@@ -12,9 +12,9 @@ window.addEventListener('scroll', () => {
         const visibleBottom = Math.min(scrollY + viewportHeight, sectionBottom);
         const visibleHeight = Math.max(0, visibleBottom - visibleTop);
         const progress = visibleHeight / viewportHeight; // 0 to 1
-
-        // Scale from 1 to 10 based on visibility
-        const scale = 1 + progress * 9; // 1 + (0 to 1)*9 = 1 to 10
+        // Scale from 0.01 to 20 based on visibility
+        // const scale = 0.01 + progress * 19.99; // 0.01 + (0 to 1)*19.99 = 0.01 to 20
+        const scale = 1 + progress * 9;
         const fontSize = scale + 'rem';
         section.querySelector('span').style.fontSize = fontSize;
     });
